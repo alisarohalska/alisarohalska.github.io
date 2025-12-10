@@ -100,6 +100,11 @@
       object-fit: cover;
       display: block;
     }
+
+    .ph-card-wide img {
+  aspect-ratio: 16 / 9; /* більш горизонтальна рамка */
+}
+
     .ph-card figcaption {
       padding: 0.6rem 0.8rem;
       font-size: 0.8rem;
@@ -154,12 +159,10 @@
         </figcaption>
       </figure>
 
-      <figure class="ph-card">
-        <img src="images/8.jpg" alt="Joy of movement and childhood freedom." />
-        <figcaption>
-          Pure joy of movement and childhood freedom running towards the sun, still untouched by the fears of the adult world.
-        </figcaption>
-      </figure>
+      <figure class="ph-card ph-card-wide">
+  <img src="images/8.jpg" alt="Pure joy of movement and childhood freedom running towards the sun, still untouched by the fears of the adult world." />
+  <figcaption>...</figcaption>
+</figure>
 
       <!-- Тут можеш додати ще кадри цієї серії, якщо захочеш -->
     </div>
