@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Self‑Portraits · Alisa Rohalska Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Self-portraits by Alisa Rohalska – exploring vulnerability from both sides of the camera." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f6;
+      color: #111;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(246,246,246,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+    .intro {
+      max-width: 640px;
+      font-size: 0.98rem;
+      opacity: 0.95;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .ph-card {
+      background: #e5e5e5;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .ph-card img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+    }
+    .ph-card figcaption {
+      padding: 0.6rem 0.8rem;
+      font-size: 0.8rem;
+      color: #333;
+      background: #f6f6f6;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 1rem 1.5rem 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .nav { padding-inline: 1rem; }
+      main { padding-inline: 1rem; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">ALISA ROHALSKA PHOTOGRAPHY</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html#portfolio" class="back-link">← Back to portfolio overview</a>
+
+    <div class="eyebrow">Series</div>
+    <h1>Self‑Portraits</h1>
+    <p class="intro">
+      This series is about standing on both sides of the camera at once. 
+      By photographing myself, I stay connected to what my clients feel – the vulnerability, 
+      the tension, the quiet courage of being truly seen. These images help me understand 
+      how to hold space for others with more empathy, honesty and care.
+    </p>
+
+    <div class="grid">
+      <figure class="ph-card">
+        <img src="images/2.jpg" alt="Self-portrait about silent fatigue and overloaded thoughts." />
+        <figcaption>
+          A frame about silent fatigue and overloaded thoughts, where the pose becomes a muted scream only you can hear.
+        </figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alisa Rohalska Photography · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
