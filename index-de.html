@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alisa Rohalska Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Authentic portrait and lifestyle photography by Alisa Rohalska." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f6;
+      color: #111;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(246,246,246,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 960px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      
+    }
+    .nav-logo {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+
+    section { margin-bottom: 3rem; }
+
+    /* Hero (Home) */
+    #home {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .hero-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+    .hero-title {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 520px;
+      opacity: 0.9;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .btn-primary, .btn-secondary {
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      border: 1px solid #111;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: transparent;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .btn-primary {
+      background: #111;
+      color: #f6f6f6;
+    }
+    .btn-primary:hover {
+      background: #333;
+    }
+    .btn-secondary:hover {
+      background: #111;
+      color: #f6f6f6;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .section-text {
+      max-width: 640px;
+      font-size: 0.98rem;
+      opacity: 0.95;
+    }
+
+    /* Portfolio grid (placeholder) */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+  .ph-card {
+  background: #e5e5e5;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.ph-card figcaption {
+  padding: 0.6rem 0.8rem
+  font-size: 0.8rem;
+  color: #333;
+  background: #f6f6f6;
+}
+
+    }
+
+    /* Contact */
+    .contact-list {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .contact-list li {
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .link-accent {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 1rem 1.5rem 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero-title { font-size: 2rem; }
+      .nav { padding-inline: 1rem; }
+      main { padding-inline: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">ALISA ROHALSKA PHOTOGRAPHY</div>
+      <div class="nav-links">
+       <a href="index.html">DE</a> | <a href="index-de.html">EN</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="hero-eyebrow">Portrait- & Lifestylefotografie</div>
+<h1 class="hero-title">Ich erzähle deine Geschichte – ehrlich, unperfekt und authentisch.</h1>
+<p class="hero-subtitle">
+  Fotografie bedeutet für mich nicht perfekte Gesichter oder starke Retusche. 
+  Es geht um deine Persönlichkeit, deine stillen Momente und eine Schönheit, die sich echt anfühlt – 
+  ehrlich, unperfekt und unvergesslich.
+</p>
+<div class="hero-cta">
+  <a href="#portfolio" class="btn-primary">Portfolio ansehen</a>
+  <a href="#contact" class="btn-secondary">Anfrage senden</a>
+</div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+     <h2>Über mich</h2>
+<p class="section-text">
+  Ich bin Alisa Rohalska, eine in der Schweiz lebende Fotografin mit ukrainischen Wurzeln 
+  und einer lebenslangen Liebe zu echten Momenten. Mein Weg begann mit analogen Kameras, 
+  führte über alltägliche Smartphone‑Geschichten und hat mich heute zur digitalen Fotografie gebracht – 
+  mit einem klaren Fokus auf Emotion statt Perfektion.
+</p>
+<br />
+<p class="section-text">
+  In einer Welt voller Filter und KI‑Bilder entscheide ich mich bewusst für Authentizität: 
+  natürliche Texturen, sanfte Farbgestaltung in Lightroom und Portraits, die zeigen, wer du bist – 
+  und nicht, wer du sein sollst. Um meine Kundinnen und Kunden besser zu verstehen, 
+  arbeite ich regelmässig mit Selbstportraits und erlebe so beide Seiten der Kamera. 
+  So kann ich Menschen mit mehr Empathie, Ruhe und Ehrlichkeit begleiten.
+</p>
+
+    </section>
+
+    <!-- PORTFOLIO -->
+   <section id="portfolio">
+  <h2>Portfolio</h2>
+<p class="section-text">
+  Ein Einblick in die Geschichten, die ich mit Licht, Körpern, Städten und stillen Alltagsmomenten erzähle. 
+  Entdecke jede Serie, um mehr Bilder und den Kontext dahinter zu sehen.
+</p> 
+  <br />
+
+  <div class="grid">
+    <!-- Body & Femininity -->
+    <figure class="ph-card">
+      <img src="images/15.jpg" alt="Portrait of self-acceptance, femininity and gentle strength." />
+        <figcaption>
+  Body &amp; Femininity – eine Serie über Selbstakzeptanz, Weichheit und die leise Kraft realer Körper.
+  <br />
+  <a href="body-femininity.html" class="link-accent">Zur gesamten Serie →</a>
+</figcaption>
+    </figure>
+
+    <!-- City & Landscape -->
+    <figure class="ph-card">
+      <img src="images/6.jpg" alt="City wrapped in golden silence before the storm." />
+     <figcaption>
+  City &amp; Landscape – goldenes Licht, stille Strassen und offene Horizonte, die sich wie Zuhause anfühlen.
+  <br />
+  <a href="city-landscape.html" class="link-accent">Zur gesamten Serie →</a>
+
+    </figcaption>
+    </figure>
+
+    <!-- Moments & Companions -->
+    <figure class="ph-card">
+      <img src="images/8-1.jpg" alt="Child running towards the sun in pure joy and freedom." />
+     <figcaption>
+  Moments &amp; Companions – kleine Alltagsszenen, Wärme, Bewegung und die Freude, nicht allein zu sein.
+  <br />
+  <a href="moments-companions.html" class="link-accent">Zur gesamten Serie →</a>
+</figcaption>
+    </figure>
+
+    <!-- Self-Portraits -->
+    <figure class="ph-card">
+      <img src="images/2.jpg" alt="Self-portrait about silent fatigue and overloaded thoughts." />
+      <figcaption>
+  Self‑Portraits – ich sehe mich selbst als Motiv und Erzählerin, um Menschen vor der Kamera besser zu verstehen.
+  <br />
+  <a href="self-portraits.html" class="link-accent">Zur gesamten Serie →</a>
+</figcaption>
+
+    </figure>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <h2>Kontakt</h2>
+<p class="section-text">
+  Möchtest du gemeinsam etwas schaffen oder hast du eine individuelle Projektidee? 
+  Melde dich gern – ich freue mich auf deine Anfrage.
+</p>
+<ul class="contact-list">
+  <li>Email: <a class="link-accent" href="mailto:alisarohalska@gmail.com">alisarohalska@gmail.com</a></li>
+  <li>Instagram: 
+    <a class="link-accent" href="https://www.instagram.com/roy_lis" target="_blank" rel="noopener noreferrer">
+      @roy_lis
+    </a>
+  </li>
+</ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alisa Rohalska Photography · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
