@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>City & Landscape · Alisa Rohalska Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="City & Landscape – a photography series by Alisa Rohalska about golden light, quiet streets and open horizons." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f6f6;
+      color: #111;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(246,246,246,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+    .intro {
+      max-width: 640px;
+      font-size: 0.98rem;
+      opacity: 0.95;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .ph-card {
+      background: #e5e5e5;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .ph-card img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+    }
+    .ph-card figcaption {
+      padding: 0.6rem 0.8rem;
+      font-size: 0.8rem;
+      color: #333;
+      background: #f6f6f6;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 1rem 1.5rem 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .nav { padding-inline: 1rem; }
+      main { padding-inline: 1rem; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">ALISA ROHALSKA PHOTOGRAPHY</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html#portfolio" class="back-link">← Back to portfolio overview</a>
+
+    <div class="eyebrow">Series</div>
+    <h1>City &amp; Landscape</h1>
+    <p class="intro">
+      A series about streets wrapped in golden silence, lakeshores turning into memories, 
+      and horizons that quietly invite you to breathe. These places hold both nostalgia and hope – 
+      a soft melancholy that feels like coming home, even if you are just passing through.
+    </p>
+
+    <div class="grid">
+      <figure class="ph-card">
+        <img src="images/6.jpg" alt="City wrapped in golden silence before the storm." />
+        <figcaption>
+          A city wrapped in golden silence before the storm – a soft melancholy of streets that feel like home.
+        </figcaption>
+      </figure>
+
+      <figure class="ph-card">
+        <img src="images/9.jpg" alt="Gentle autumn light at the lakeshore." />
+        <figcaption>
+          Gentle autumn light turning an ordinary lakeshore into a soft, dreamlike memory you want to linger in.
+        </figcaption>
+      </figure>
+
+      <figure class="ph-card">
+        <img src="images/10.jpg" alt="Limitless sky and a brave choice." />
+        <figcaption>
+          The feeling of limitless sky and a single brave choice – a small silhouette floating above mountains and doubts.
+        </figcaption>
+      </figure>
+
+      <figure class="ph-card">
+        <img src="images/11.jpg" alt="Secret lookout carved in rock." />
+        <figcaption>
+          A secret lookout carved in rock, as if the landscape were a hidden postcard only you were meant to discover.
+        </figcaption>
+      </figure>
+
+      <figure class="ph-card">
+        <img src="images/12.jpg" alt="Swiss altitude and blue distance." />
+        <figcaption>
+          A quiet celebration of Swiss altitude and space – where distance softens into blue layers and freedom feels almost touchable.
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alisa Rohalska Photography · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
