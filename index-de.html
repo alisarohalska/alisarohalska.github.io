@@ -143,6 +143,37 @@
   color: #333;
   background: #f6f6f6;
 }
+    
+  .about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.about-photo {
+  max-width: 320px;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  display: block;
+}
+
+.about-photo figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
 
     }
 
